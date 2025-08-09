@@ -1,13 +1,12 @@
     Gestor de Tareas — Backend + Frontend
 #   -------------------------------------     #
-
 Este es un proyecto sencillo que busca crear, editar, eliminar y por supuesto editar tareas, diferenciandolas por tres estados (Pendiente, En progreso y Completadas) y ademas de esto tambien por color, tiene un gran punto que se utiliza SharedPreference con el fin de poder identificar el dispotivio (Su id que se almacena localmente desde el frontend y se envia al backend) y que este sin necesidad de tener una sesion iniciada me permita solo listar las tareas de ese usuario.
 
 
 #   -----------------------------    #
     Backend - Nestjs + PostgreSQL
 #   -----------------------------    #
-URL desplegado:
+URL desplegado: https://backend-proyecto-tareas.onrender.com
 
 REQUISITOS PREVIOS
 1. Node.js >= 18
@@ -22,11 +21,12 @@ CONFIGURACION INICIAL
 2. cd server
 3. npm install (Para instalar las depencias)
 4. IMPORTANTE, hay que crear el archivo .env en la raiz para la conexion a la base de datos, ejemplo:
-    DB_HOST=localhost
+    DB_HOST=dpg-d2bntq15pdvs73cv8aag-a
     DB_PORT=5432
-    DB_USERNAME=postgres
-    DB_PASSWORD=tu_password
-    DB_NAME=task_manager
+    DB_NAME=bd_proyecto_tareas
+    DB_USERNAME=bd_proyecto_tareas_user
+    DB_PASSWORD=Nf3VMcAlccSHNWDfE82Xw0f1QxOGNp2i
+    DATABASE_URL=postgresql://bd_proyecto_tareas_user:Nf3VMcAlccSHNWDfE82Xw0f1QxOGNp2i@dpg-d2bntq15pdvs73cv8aag-a.oregon-postgres.render.com/bd_proyecto_tareas
 5. Y para ejecutar el proyecto, el siguiente comando: "npm run start"
 
 
@@ -49,8 +49,6 @@ ESTRUCUTRA DE LOS MODULOS PRINCIPALES
 #   -------------------------    #
     Frontend - Flutter y Dart
 #   -------------------------    #
-URL desplegado:
-
 REQUISITOS PREVIOS
 1. Flutter SDK instalado (flutter doctor)
 2. Android Studio

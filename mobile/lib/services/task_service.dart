@@ -9,7 +9,9 @@ class TaskService{
   //Para ejecutarlo en web
   //static const String baseUrl = 'http://localhost:3000';
   //IP para emulador
-  static const String baseUrl = 'http://10.0.2.2:3000';
+  //static const String baseUrl = 'http://10.0.2.2:3000';
+  //Url desplegada
+  static const String baseUrl = 'https://backend-proyecto-tareas.onrender.com';
 
   //Obtener las tareas
   Future<List<Task>> getTasks() async{
