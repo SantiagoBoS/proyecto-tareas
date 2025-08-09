@@ -46,11 +46,6 @@ ESTRUCUTRA DE LOS MODULOS PRINCIPALES
     PUT /tasks/:id
     DELETE /tasks/:id/:deviceId
 
-
-# ------------------------------------------------------------------------------------- #
-# ------------------------------------------------------------------------------------- #
-
-
 #   -------------------------    #
     Frontend - Flutter y Dart
 #   -------------------------    #
@@ -95,11 +90,16 @@ FUNCIONALIDAES IMPLEMENTADAS
     - Las tareas estan ligadas al deviceId, por lo que no se mezclan con otros dispositivos
 
 
-# ------------------------------------------------------------------------------------- #
-# ------------------------------------------------------------------------------------- #
-
-
 #   ---------------------------------    #
     IMAGENES DEL PROCESO DE EJECUCION
 #   ---------------------------------    #
 Link al google drive: https://drive.google.com/drive/folders/14rC37qDdhlwO5omn6384rVdoLyEv86vD?usp=sharing
+
+
+#   ---------------------    #
+    IMPORTANTE A DESTACAR
+#   ---------------------    #
+1. synchronize: true en TypeORM solo se usa en desarrollo. En produccion puede borrar o modificar tablas automaticamente
+2. El deviceId evita que un dispositivo vea tareas creadas en otro
+3. En el metodo update del backend se controla que solo los campos enviados sean actualizados para evitar perder informacion
+4. En Flutter, al actualizar una tarea, si un campo queda vacio, se conserva el valor anterior
