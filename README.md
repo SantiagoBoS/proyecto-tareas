@@ -1,11 +1,11 @@
     Gestor de Tareas — Backend + Frontend
-#   -------------------------------------     #
+
 Este es un proyecto sencillo que busca crear, editar, eliminar y por supuesto editar tareas, diferenciandolas por tres estados (Pendiente, En progreso y Completadas) y ademas de esto tambien por color, tiene un gran punto que se utiliza SharedPreference con el fin de poder identificar el dispotivio (Su id que se almacena localmente desde el frontend y se envia al backend) y que este sin necesidad de tener una sesion iniciada me permita solo listar las tareas de ese usuario.
 
 
 #   -----------------------------    #
     Backend - Nestjs + PostgreSQL
-#   -----------------------------    #
+
 URL desplegado: https://backend-proyecto-tareas.onrender.com/tasks
 - A tener en cuenta, como es un servicio gratiuto, y luego de 15 minutos de no ejecutar algo con esta URL, automaticamente se desactiva y toca encender o iniciar nuevamente el servicio manualmente para poder utilizar la URL, entonces se pueden hacer dos cosas, manejar el entorno localmente o hice pruebas y accediendo nuevamente a la URL y esperar a que cargue, vuelve y muestra las tareas creadas
 - Obtener todas las tareas: https://backend-proyecto-tareas.onrender.com/tasks
@@ -69,7 +69,7 @@ ESTRUCUTRA DE LOS MODULOS PRINCIPALES
 
 #   -------------------------    #
     Frontend - Flutter y Dart
-#   -------------------------    #
+
 REQUISITOS PREVIOS
 1. Flutter SDK instalado (flutter doctor)
 2. Android Studio
@@ -111,13 +111,13 @@ FUNCIONALIDAES IMPLEMENTADAS
 
 #   ---------------------------------    #
     IMAGENES DEL PROCESO DE EJECUCION
-#   ---------------------------------    #
+
 Link al google drive (Imagenes y un video con la ejecucion completa): https://drive.google.com/drive/folders/14rC37qDdhlwO5omn6384rVdoLyEv86vD?usp=sharing
 
 
 #   ---------------------    #
     IMPORTANTE A DESTACAR
-#   ---------------------    #
+
 1. synchronize: true en TypeORM solo se usa en desarrollo. En produccion puede borrar o modificar tablas automaticamente
 2. El deviceId evita que un dispositivo vea tareas creadas en otro
 3. En el metodo update del backend se controla que solo los campos enviados sean actualizados para evitar perder informacion
