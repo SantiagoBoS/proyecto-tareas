@@ -6,8 +6,8 @@ Este es un proyecto sencillo que busca crear, editar, eliminar y por supuesto ed
 #   -----------------------------    #
     Backend - Nestjs + PostgreSQL
 #   -----------------------------    #
-URL desplegado: https://backend-proyecto-tareas.onrender.com
-- A tener en cuenta, como es un servicio gratiuto, y luego de 15 minutos de no ejecutar algo con esta URL, automaticamente se desactiva y toca encender o iniciar nuevamente el servicio manualmente para poder utilizar la URL
+URL desplegado: https://backend-proyecto-tareas.onrender.com/tasks
+- A tener en cuenta, como es un servicio gratiuto, y luego de 15 minutos de no ejecutar algo con esta URL, automaticamente se desactiva y toca encender o iniciar nuevamente el servicio manualmente para poder utilizar la URL, entonces se pueden hacer dos cosas, manejar el entorno localmente o hice pruebas y accediendo nuevamente a la URL y esperar a que cargue, vuelve y muestra las tareas creadas
 - Obtener todas las tareas: https://backend-proyecto-tareas.onrender.com/tasks
 - Crear una nueva tarea: https://backend-proyecto-tareas.onrender.com/tasks/
     Cuerpo:
@@ -17,8 +17,8 @@ URL desplegado: https://backend-proyecto-tareas.onrender.com
         "status": "pending",
         "deviceId": "asdasdasdasdasd"
     }
-- Actualizar una tarea: https://backend-proyecto-tareas.onrender.com//tasks/:id
-- Eliminar una tarea: https://backend-proyecto-tareas.onrender.com//tasks/:id/:deviceId
+- Actualizar una tarea: https://backend-proyecto-tareas.onrender.com/tasks/:id
+- Eliminar una tarea: https://backend-proyecto-tareas.onrender.com/tasks/:id/:deviceId
 
 REQUISITOS PREVIOS
 1. Node.js >= 18
