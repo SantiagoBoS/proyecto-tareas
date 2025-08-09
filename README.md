@@ -7,6 +7,18 @@ Este es un proyecto sencillo que busca crear, editar, eliminar y por supuesto ed
     Backend - Nestjs + PostgreSQL
 #   -----------------------------    #
 URL desplegado: https://backend-proyecto-tareas.onrender.com
+- A tener en cuenta, como es un servicio gratiuto, y luego de 15 minutos de no ejecutar algo con esta URL, automaticamente se desactiva y toca encender o iniciar nuevamente el servicio manualmente para poder utilizar la URL
+- Obtener todas las tareas: https://backend-proyecto-tareas.onrender.com/tasks
+- Crear una nueva tarea: https://backend-proyecto-tareas.onrender.com/tasks/
+    Cuerpo:
+    {
+        "title": "Escribir Nestjs",
+        "description": "Entrega final",
+        "status": "pending",
+        "deviceId": "asdasdasdasdasd"
+    }
+- Actualizar una tarea: https://backend-proyecto-tareas.onrender.com//tasks/:id
+- Eliminar una tarea: https://backend-proyecto-tareas.onrender.com//tasks/:id/:deviceId
 
 REQUISITOS PREVIOS
 1. Node.js >= 18
@@ -27,6 +39,15 @@ CONFIGURACION INICIAL
     DB_USERNAME=bd_proyecto_tareas_user
     DB_PASSWORD=Nf3VMcAlccSHNWDfE82Xw0f1QxOGNp2i
     DATABASE_URL=postgresql://bd_proyecto_tareas_user:Nf3VMcAlccSHNWDfE82Xw0f1QxOGNp2i@dpg-d2bntq15pdvs73cv8aag-a.oregon-postgres.render.com/bd_proyecto_tareas
+
+    - O de manera local: 
+        DB_HOST=localhost
+        DB_PORT=5432
+        DB_USERNAME=tu_usario
+        DB_PASSWORD=tu_contraseña
+        DB_NAME=nombre_de_la_base_de_datos
+    - Y en el app.module.ts descomentar la linea 18 a la 21 y comentar la linea 16, con el fin de configurar un entorno local
+
 5. Y para ejecutar el proyecto, el siguiente comando: "npm run start"
 
 
@@ -91,7 +112,7 @@ FUNCIONALIDAES IMPLEMENTADAS
 #   ---------------------------------    #
     IMAGENES DEL PROCESO DE EJECUCION
 #   ---------------------------------    #
-Link al google drive: https://drive.google.com/drive/folders/14rC37qDdhlwO5omn6384rVdoLyEv86vD?usp=sharing
+Link al google drive (Imagenes y un video con la ejecucion completa): https://drive.google.com/drive/folders/14rC37qDdhlwO5omn6384rVdoLyEv86vD?usp=sharing
 
 
 #   ---------------------    #
